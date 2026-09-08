@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UMixer Terms of Service</title>
+	<style>
+		body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #24292f; background-color: #ffffff; max-width: 800px; margin: 0 auto; padding: 2rem; }
+		h1, h2 { font-weight: 600; border-bottom: 1px solid #d8dee4; padding-bottom: 0.3em; margin-bottom: 16px; }
+		h1 { font-size: 2em; margin-top: 0; } h2 { font-size: 1.5em; margin-top: 24px; }
+		p, ul { margin-top: 0; margin-bottom: 16px; } li { margin-bottom: 4px; }
+		a { color: #0969da; text-decoration: none; } a:hover { text-decoration: underline; }
+		.meta-info { color: #57606a; font-size: 0.9em; margin-bottom: 24px; }
+		</style>
+		</head>
+		<body>
+			<h1>UMixer Terms of Service</h1>
+			<div class="meta-info">Last Updated: August 20, 2026</div>
+			<p>Welcome to <strong>UMixer</strong> ("the App"), a native iOS application developed by <strong>Jason King</strong> ("the developer"). By downloading, installing, or using the App, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+			<h2>1. Description of Service</h2>
+			<p>UMixer is a mobile tool designed to assist users in organizing and creating custom playlists within their personal YouTube accounts. The App utilizes Google OAuth credentials to securely authenticate users and access necessary YouTube API features on their behalf.</p>
+			<h2>2. Eligibility and Account Integration</h2>
+			    <p>To use the features of this App, you must connect your personal Google/YouTube account via Google Sign-In. You are solely responsible for maintaining the security of your Google account credentials and for all activities that occur under your account.</p>
+			
+			<h2>3. Third-Party Service Terms (YouTube)</h2>
+    <p>By downloading, installing, or using UMixer to interact with YouTube, you acknowledge, understand, and agree that you are bound by the YouTube Terms of Service. You can review the full, official legal framework at: https://youtube.com/t/terms. Any violation of YouTube's official policies or guidelines while using the App will result in immediate termination of your access to our service.</p>
+			<h2>4. Acceptable Use and Restrictions</h2>
+			    <p>You agree that you will not use the App to:</p>
+			    <ul>
+			        <li>Engage in automated, abusive, or spam-like creation of playlists or video distributions that violate YouTube Community Guidelines.</li>
+			        <li>Attempt to reverse engineer, decompile, or disrupt the native operation of the iOS application.</li>
+			        <li>Impersonate any person or entity, or misrepresent your affiliation with a channel or creator.</li>
+			    </ul>
+			<h2>5. Data Privacy</h2>
+			    <p>Your use of the App is also governed by the developer's <a href="https://22237.github.io/Department7Support/privacy.html">Privacy Policy</a>. The App operates strictly as a client-side execution tool on your iOS device; your authentication tokens and playlist structures are stored locally on your device or transmitted directly to Google APIs, and are not harvested or stored on external servers controlled by us.</p>
+			<h2>6. Termination of Service</h2>
+			    <p>The Developer reserves the right to suspend, terminate, or limit your access to UMixer at any time, without notice, for any conduct that they believe violates these Terms, harms other users, or infringes upon the operational integrity of Google or YouTube APIs.</p>	
+			<h2>7. Limitation of Liability and Disclaimers</h2>
+			    <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. The developer does not guarantee that the creation or management of playlists will be entirely uninterrupted or error-free due to dependency on external Google API infrastructure. In no event shall the developer be liable for any indirect, incidental, or consequential damages resulting from your use or inability to use the App.</p>
+
+			    <h2>8. Governing Law</h2>
+			    <p>These Terms shall be governed by and construed in accordance with the laws of the State of Arkansas, United States, without regard to its conflict of law provisions.</p>
+
+			    <h2>9. Contact Information</h2>
+			    <p>If you have any questions or feedback regarding these Terms, please use the public support address: <strong>seventhdepartment@gmail.com</strong>.</p>
+			
+		</body>
+		</html>
