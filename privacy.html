@@ -35,10 +35,9 @@
 			    </ul>
 			<h2>3. Data Storage and Security</h2>
 		    <ul>
-		        <li><strong>Local On-Device Processing:</strong> Playlist data is downloaded directly from Google servers to your iOS device via secure connections and remains transiently on-device without being sent to external servers.</li>
-				<li><strong>No Remote Server Logs:</strong> Operating without an external cloud backend, all tokens, playlists, purchase states, and usage metrics are managed strictly in-memory and on-device.</li>
-				<li><strong>Device Storage and Local Access Disclosure:</strong> The App utilizes local storage (UserDefaults and secure keychains) directly on your device to track usage limits, generation counts, subscription transaction states, and rate-limiting timestamps associated with your account identifier.</li>
-				<li><strong>Integrated Third-Party SDK Trackers:</strong> It uses official modules like the Google Sign-In SDK and Apple’s native security frameworks (StoreKit 2, DeviceCheck, and AppAttest) for session retention, billing reconciliation, and app integrity validation, strictly excluding third-party ad trackers or cookies.</li>
+		        <li><strong>Device Information and Local Storage:</strong> The App discloses that the API Client stores, accesses, or collects (or allows authorized third-party platform providers to do so) information directly or indirectly on or from users’ devices, including by placing, accessing, or recognizing cookies or similar technology on users' devices or browsers. This operational interaction is strictly limited to your explicit device communications with Google Identity Services (for secure account authentication) and Apple StoreKit/AppAttest frameworks (for subscription validation and hardware integrity verification). The App does not share data with, nor allow access to, any other third parties, advertising networks, or external analytics systems.</li>
+				<li><strong>Application State Persistence:</strong> App configurations, lifetime mix counts, and local operational rate-limit tracking arrays are retained securely on your physical device using native iOS UserDefaults. These structures are completely isolated locally per Google User ID string to ensure multi-account integrity.</li>
+				<li><strong>Authentication Tokens:</strong> Secure OAuth 2.0 access credentials, refresh tokens, and authentication parameters provisioned via the Google Sign-In SDK are stored exclusively within the secure iOS Keychain.<li>
 		    </ul>
 			
 			<h2>4. Data Retention, Sign-Out, and Deletion</h2>
