@@ -35,16 +35,17 @@
 			    </ul>
 			<h2>3. Data Storage and Security</h2>
 		    <ul>
-		        <li><strong>Local On-Device Processing:</strong> The App downloads your YouTube playlist data directly from Google servers to your iOS device using secure connections. This information stays on your device and is never sent to us or any other server.</li>
-		        <li><strong>No Remote Server Logs:</strong> We do not operate a backend cloud infrastructure or server database. Your access tokens, playlist selections, and profile details are never transmitted to us or any third party.</li>
-		        <li><strong>Session Token Management:</strong> Google OAuth access tokens are handled securely in-memory using the official Google Sign-In SDK for iOS. These tokens are transiently refreshed and are never stored in unprotected files or public databases on your device.</li>
-		        <li><strong>App Integrity Protection:</strong> The App uses Apple's native security frameworks (DeviceCheck and App Attest) alongside hardware-level encryption to ensure the integrity of the application environment and that your connections remain secure.</li>
+		        <li><strong>Local On-Device Processing:</strong> Playlist data is downloaded directly from Google servers to your iOS device via secure connections and remains transiently on-device without being sent to external servers.</li>
+				<li><strong>No Remote Server Logs:</strong> Operating without an external cloud backend, all tokens, playlists, purchase states, and usage metrics are managed strictly in-memory and on-device.</li>
+				<li><strong>Device Storage and Local Access Disclosure:</strong> The App utilizes local storage (UserDefaults and secure keychains) directly on your device to track usage limits, generation counts, subscription transaction states, and rate-limiting timestamps associated with your account identifier.</li>
+				<li><strong>Integrated Third-Party SDK Trackers:</strong> It uses official modules like the Google Sign-In SDK and Apple’s native security frameworks (StoreKit 2, DeviceCheck, and AppAttest) for session retention, billing reconciliation, and app integrity validation, strictly excluding third-party ad trackers or cookies.</li>
 		    </ul>
 			
 			<h2>4. Data Retention, Sign-Out, and Deletion</h2>
 		    <ul>
-		        <li><strong>Instant Purge on Sign-Out:</strong> You retain full control over your session. When you tap the "Sign Out" button within the App, the App actively instructs the Google Sign-In SDK to terminate the active session, instantly clearing all active authentication keys and cached in-memory profiles from your device.</li>
-		        <li><strong>Revoking Access via Google:</strong> Because the App does not store your account information, you can permanently revoke the App's permissions at any time directly through your personal <strong>Google Security Account Settings</strong> panel under the "Third-party apps with account access" section.</li>
+		        <li><strong>Immediate Local Erasure:</strong> Because the App processes all data locally, user session records, downloaded playlist metadata, and OAuth access tokens are completely and instantly purged from the device's temporary memory the moment a user signs out.</li>
+				<li><strong>Device Storage Lifespan:</strong> Local usage counters and transaction validation states stored within the app's sandboxed storage (UserDefaults) remain on the physical device to enforce feature tier boundaries. This data is permanently erased from the disk by the iOS operating system immediately upon the deletion or uninstallation of the application from the user's device.</li>
+				
 		    </ul>
 			<h2>5. Third-Party Services</h2>
 		    <p>The App incorporates frameworks provided by Google and Apple to facilitate base connectivity and core operations:</p>
